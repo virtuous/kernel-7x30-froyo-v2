@@ -86,7 +86,7 @@ config PERFLOCK_BOOT_LOCK
 
 config PERFLOCK_SCREEN_POLICY
 	depends on PERFLOCK
-	depends on ARCH_QSD8X50 || ARCH_MSM7X00A || ARCH_MSM7227 || ARCH_MSM7225
+	depends on ARCH_QSD8X50 || ARCH_MSM7X30 || ARCH_MSM7X00A || ARCH_MSM7227 || ARCH_MSM7225
 	default n
 	bool "Change Cpufreq Policy while Screen ON/OFF"
 
