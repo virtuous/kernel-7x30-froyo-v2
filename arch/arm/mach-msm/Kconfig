@@ -1271,3 +1271,10 @@ config PROC_COMM_TIMEOUT_RESET
 		To reset device while modem hang, and cannot respond proc_comm.
 		Enable this might cause slight overhead on each proc_comm call.
 
+config VIRTUOUS_OVERCLOCK
+        bool "Virtuous overclocking mode"
+        default n
+        depends on CPU_FREQ && !PERFLOCK
+        depends on ARCH_QSD8X50 || ARCH_MSM7X30 || ARCH_MSM7X00A || ARCH_MSM7227 || ARCH_MSM7225
+        help
+         Enable support for higher overclocked frequencies.
